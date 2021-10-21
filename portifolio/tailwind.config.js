@@ -11,11 +11,11 @@ module.exports = {
       xl: '1440px',
     },
     colors: {
-      gray: colors.coolGray,
-      blue: colors.lightBlue,
-      red: colors.rose,
-      pink: colors.fuchsia,
-      primary: "#3f1273", 
+      verdigris: "#00afb9",
+      lightYellow: "#fdfcdc", 
+      peachPuff: "#fed9b7", 
+      primary: "#0081a7", //cg blue
+      secondary: "#f07167", //bittersweet
     },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],

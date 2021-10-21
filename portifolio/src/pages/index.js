@@ -4,24 +4,32 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { theme } from "../../tailwind.config"
+import { ProductCard } from "../components/product-card"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <p className="text-gray-500">Hi people</p>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="https://images.unsplash.com/photo-1518557984649-7b161c230cfa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1"
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="Greece landscape"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
+    <div className="flex flex-row space-x-40 mt-16">
+      <div className="flex flex-col">
+        <h1 className="mb-8">Sou o Lucas Fonseca, um apaixonado por <span style={{color: theme.colors.primary}}>arte</span> e <span style={{color: theme.colors.primary}}>tecnologia</span></h1>
+        <p>Focado em misturar arte e código para criar experiências incríveis.
+    Já produzi conteúdo audiovisual, jogos e softwares. Atualmente sou responsável pela experiência do usuário de softwares para o varejo.</p>
+        <div>
+          <button className="btn font-bold py-2 px-4 rounded text-xs flex flex-row font-sans"
+            style={{backgroundColor: theme.colors.primary, color: "white"}}
+          >
+            Explore meu trabalho
+          </button>
+        </div>
+      </div>
+      <div>
+        <StaticImage
+          src="https://raw.githubusercontent.com/lucasl2f/lucasl2f.github.io/source/gatsby-site/src/images/profile.jpg"
+          className="rounded-3xl w-56 h-56"
+        />
+      </div>
+    </div>
   </Layout>
 )
 
