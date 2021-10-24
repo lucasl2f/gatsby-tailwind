@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { theme } from "../../tailwind.config"
-import { ProductCard } from "../components/product-card"
+import { ProjectCard } from "../components/project-card"
 
 const IndexPage = () => (
   <Layout>
@@ -26,7 +26,27 @@ const IndexPage = () => (
       <div>
         <StaticImage
           src="https://raw.githubusercontent.com/lucasl2f/lucasl2f.github.io/source/gatsby-site/src/images/profile.jpg"
-          className="rounded-3xl w-56 h-56"
+          className="rounded-4xl w-56 h-56"
+        />
+      </div>
+    </div>
+    <div className="mt-24 w-full">
+      <h2 className="text-center">Trabalhos</h2>
+      <div className="flex flex-row space-x-4">
+        <ProjectCard
+          src="https://raw.githubusercontent.com/lucasl2f/lucasl2f.github.io/source/gatsby-site/src/images/profile.jpg"
+          name="Grand Shooter"
+          description="Jogo de tiro em primeira pessoa para dispositivos móveis"
+        />
+        <ProjectCard
+          src="https://raw.githubusercontent.com/lucasl2f/lucasl2f.github.io/source/gatsby-site/src/images/profile.jpg"
+          name="Grand Shooter"
+          description="Jogo de tiro em primeira pessoa para dispositivos móveis"
+        />
+        <ProjectCard
+          src="https://raw.githubusercontent.com/lucasl2f/lucasl2f.github.io/source/gatsby-site/src/images/profile.jpg"
+          name="Grand Shooter"
+          description="Jogo de tiro em primeira pessoa para dispositivos móveis"
         />
       </div>
     </div>
