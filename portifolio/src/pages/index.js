@@ -27,11 +27,11 @@ const IndexPage = () => (
         <p>Focado em misturar arte e código para criar experiências incríveis.
     Já produzi conteúdo audiovisual, jogos e softwares. Atualmente sou responsável pela experiência do usuário de softwares para o varejo.</p>
         <div>
-          <button className="btn font-bold py-2 px-4 rounded text-xs flex flex-row font-sans"
+          {/* <button className="btn font-bold py-2 px-4 rounded text-xs flex flex-row font-sans"
             style={{backgroundColor: theme.colors.primary, color: "white"}}
           >
             Explore meu trabalho
-          </button>
+          </button> */}
         </div>
       </div>
       <div>
@@ -43,12 +43,13 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="mt-24 w-full">
-      <h2 className="text-center">Trabalhos</h2>
-      <div className="flex flex-row space-x-4">
+      <h2 className="text-center mb-16">Trabalhos</h2>
+      <div className="flex flex-row justify-between mb-16">
         <ProjectCard
           src={grandshooter}
           name="Grand Shooter"
           description="Jogo de tiro em primeira pessoa para dispositivos móveis"
+          link="https://grumpypandastudios.itch.io/grand-shooter"
         />
         <ProjectCard
           src={musikinesia}
@@ -68,37 +69,49 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="mt-24 w-full">
-      <h2 className="text-center">Curtas</h2>
-      <div className="flex flex-row space-x-4">
+      <h2 className="text-center mb-16">Curtas</h2>
+      <div className="flex flex-row justify-between mb-16">
         <ProjectCard
           src={abreojogo}
           name="Abre o jogo"
           description="Toni Ferreira, técnico da seleção brasileira, resolve procurar ajuda de um psicólogo para lidar com suas angústias e frustrações."
+          link="https://www.dailymotion.com/video/k2mCjUeLsWi4D49wtxH"
         />
         <ProjectCard
           src={thai}
           name="Thai"
           description="Thai tem 15 anos e está começando a entender quem é. Em uma festa com sua irmão, tem um encontro que vai mudar sua perspectiva de si e do mundo."
+          link="https://www.youtube.com/watch?v=L_ZR-1CE9q0"
         />
         <ProjectCard
           src={izabel}
           name="Izabel"
           description="Documentário que faz um passeio pela Vila Izabel em São Carlos, a fim de conhecer seus antigos moradores e compreender como suas histórias de vida se relacionam com a história do bairro fundado por ex-escravos."
+          link="https://www.youtube.com/watch?v=Lx-fuBsdeoI"
         />
         <ProjectCard
           src={abuso}
           name="Abuso"
           description="O curta incita a reflexão sobre as consequências do poder da mídia quanto à disseminação de informações."
+          link="https://www.youtube.com/watch?v=DCweK4IpPIs"
         />
+      </div>
+      <div className="flex flex-row justify-between mb-16">
         <ProjectCard
           src={terraavista}
           name="Terra à Vista"
           description="Trailer para divulgação do jogo digital, que conta a história das famílias Rapposo e Ferroni na disputa pela herança deixada por um parente em comum."
+          link="https://www.youtube.com/watch?v=1dU3pxnJg8o"
         />
         <ProjectCard
           src={houndmouth}
           name="Houndmouth - Casino"
           description="Clipe produzido para um concurso da banda Houndmouth."
+          link="https://v1.genero.com///watch-video/37074"
+        />
+        <ProjectCard
+        />
+        <ProjectCard
         />
       </div>
     </div>
